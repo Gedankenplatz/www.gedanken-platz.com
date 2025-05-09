@@ -1,1 +1,1 @@
-# gedanken-platz.com
+www.gedanken-platz.com
