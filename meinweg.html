@@ -1,103 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein Weg - Gedankenplatz</title>
-  <style>
-  body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fb;
-      color: #1a1a1a;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #e8f0fa;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      background: linear-gradient(to right, #446eaa, #1e3a5f);
-      padding: 1rem 0;
-      text-align: center;
-      width: 100%;
-    }
-    nav a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 1.5rem;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #1e3a5f;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: #446eaa;
-    }
-    details {
-      margin-bottom: 1rem;
-      background: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 1rem;
-    }
-    summary {
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      color: #446eaa;
-    }
-    summary:hover {
-      text-decoration: underline;
-    }
-    .button {
-      background-color: #446eaa;
-      color: white;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    .button:hover {
-      background-color: #365d8c;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich – Gedankenplatz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Gedankenplatz</h1>
-    <h2>Ein anonymer Raum für ehrliche Gespräche.</h2>
+  <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <header role="banner">
+  <div class="logo-float">GEDANKENPLATZ</div>
+  <h1>Gedankenplatz</h1>
+  <h2>Ein anonymer Raum für ehrliche Gespräche.</h2>
   </header>
 
-  <nav>
-    <button class="button"><a href="index.html">Start</a></button>
-    <button class="button"><a href="übermich.html">Über mich</a></button>
-    <button class="button"><a href="meinweg.html">Mein Weg</a></button>
-    <button class="button"><a href="kontakt.html">Kontakt</a></button>
-    <button class="button"><a href="Impressum.html">Impressum</a></button>
-    <button class="button"><a href="notfall.html">Notfall</a></button>
+
+  <nav role="navigation" aria-label="Hauptnavigation">
+    <a href="index.html" class="button">Start</a>
+    <a href="übermich.html" class="button">Über mich</a>
+    <a href="meinweg.html" class="button">Mein Weg</a>
+    <a href="kontakt.html" class="button">Kontakt</a>
+    <a href="impressum.html" class="button">Impressum</a>
+    <a href="notfall.html" class="button">Notfall</a>
   </nav>
 
- <main id="meinweg">
+
+  <main id="main">
     <h1>Mein Weg</h1>
     <p>Dies ist meine Geschichte – ehrlich, direkt, manchmal unbequem. Vielleicht erkennst du dich in manchen Momenten wieder.</p>
     <details><summary>Kapitel 1: Vorwort</summary><p>Ich schreibe diese Zeilen in erster Linie für mich selbst. Natürlich könnte man jetzt sagen, dass ich mir professionelle Hilfe 
@@ -1223,5 +1153,10 @@ Lasst euch nicht unterkriegen.
 Euer Sebastian</p></details>
 
   </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Gedankenplatz. Alle Rechte vorbehalten.</p>
+  </footer>
+
 </body>
 </html>
